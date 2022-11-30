@@ -11,20 +11,94 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
-<body class="bg">
-    <div class="container">
-        <div class="d-flex justify-content-between pt-5">
-            <a class="t-big c-color" href="index.html">Front page</a>
-            <a class="t-big c-color" href="about.html">About</a>
-        </div>
-        <img class="hest p-5 img-cen" src="images/hest.png">
+<style>
+    body {margin: 0;
+    background-color: #fff;}
+    ul.topnav {
+            list-style-type: none;
+            margin:20px;
+            padding: 20px;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.topnav li {float: left;}
+
+        ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+        ul.topnav li a.active {color: #04AA6D;}
+
+        ul.topnav li.right {float: right;}
+
+        ul.topnav li.left {
+            color: #fff;
+            font-family: "Bebas Neue", cursive;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        img {width:100px;
+        height: 100px;}
+
+        @media screen and (max-width: 768px) and (min-width:480px) {
+        ul.topnav li.right, 
+        ul.topnav li {float: none;}
+        }
+
+        footer {
+        position: fixed;
+        left: 0;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        }
+        footer img {
+                width:50px;
+                height: 50px;
+        }
+</style>
+
+<body>
+
+    <ul class="topnav">
+        <li class="left">Staalbaek LTD</li> 
+        <li class="right"><a href="index.html">Home</a></li>
+        <li class="right"><a href="about.html">About</a></li>
+        <li class="right"><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+
+    <div>
+        <img class="hest p-5 img-cen" src="images/temp-logo SB Ltd.png">
         <div class="text-center p-3 t-big">Staalbaek LTD</div>
         <div class="text-center t-big">Phone:</div>
-        <div class="text-center">00000000</div>
+        <div class="text-center">0045 31155327</div>
         <div class="text-center t-big">Email:</div>
-        <div class="text-center">Email@gmail.com</div>
+        <div class="text-center">admin@staalbaek.dk</div>
+        <div class="text-center t-big">Address:</div>
+        <div class="text-center">
+            63 Newland, <br/>
+            Witney, <br/>
+            Oxfordshire, <br/>
+            United Kingdom, OX28 3JN <br/>
+        </div>
+     </div>
 
-    </div>
+     <footer>
+        <a href="www.facebook.dk"> <img src="images/facebook.png"></a>
+        <a href="www.instagram.dk"> <img src="images/instagram.png"></a>
+        <a href="www.linkedin.dk"> <img src="images/linkedin.png"></a>
+    </footer>
 
 </body>
 

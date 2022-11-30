@@ -6,31 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
+<style>
+    body {margin: 0;
+    background-color: #fff;}
+    ul.topnav {
+            list-style-type: none;
+            margin:20px;
+            padding: 20px;
+            overflow: hidden;
+            background-color: #333;
+            padding-right: 20px;
+        }
 
-<body class="bg">
-    <div class="container">
-        <div class="d-flex justify-content-between pt-5">
-            <a class="t-big c-color" href="index.html">Front page</a>
-            <a class="t-big c-color" href="contact.html">Contact</a>
-        </div>
-        <img class="hest p-5 img-cen" src="images/hest.png">
-        <div class="text-center p-3 t-big">Staalbaek LTD</div>
+        ul.topnav li {float: left;}
+
+        ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+        ul.topnav li a.active {color: #04AA6D;}
+
+        ul.topnav li.right {float: right;}
+
+        ul.topnav li.left {
+            color: #fff;
+            font-family: "Bebas Neue", cursive;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        
+
+        @media screen and (max-width: 600px) {
+        ul.topnav li.right, 
+        ul.topnav li {float: none;}
+        }
+
+        footer {
+        position: fixed;
+        left: 0;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;
+        }
+
+        footer img {
+                width:50px;
+                height: 50px;
+        }
+</style>
+
+<body>
+    <ul class="topnav">
+        <li class="left">Staalbaek LTD</li> 
+        <li class="right"><a  href="index.html">Home</a></li>
+        <li class="right"><a class="active" href="#">About</a></li>
+        <li class="right"><a href="contact.html">Contact</a></li>
+    </ul>
+    <div>
+        
+        <img class="hest p-5 img-cen" src="images/temp-logo SB Ltd.png">
+        <div class="text-center  t-big">Staalbaek LTD</div>
         <div class="text-center">
             <div class="t-big">About Staalbaek LTD</div>
-            <div class="custom-m pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                id est
-                laborum</div>
+            <div class="custom-m pt-5">
+                Staalbaek Ltd was set up in October 2022 as the UK arm of the Organization Stålbæk Holding ApS.
+                For the expansion of the platform <a href="https://www.yourfootprint.uk">Your Footprint</a>.
+                Europe’s most comprehensive CO2eq Calculation tool for the Agricultural Sector.
+                <br/>
+                Developed in conjunction with Denmark’s First CO2eq beef farm <a href="https://www.staalbaek.dk">Stålbæk Gård ApS</a>.  
+            </div>
         </div>
     </div>
+
+    <footer>
+        <a href="www.facebook.dk"> <img src="images/facebook.png"></a>
+        <a href="www.instagram.dk"> <img src="images/instagram.png"></a>
+        <a href="www.linkedin.dk"> <img src="images/linkedin.png"></a>
+    </footer>
+
 </body>
 
 </html>
